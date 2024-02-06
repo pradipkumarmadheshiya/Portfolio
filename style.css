@@ -120,8 +120,8 @@ nav ul li a:hover::after{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.skill-list div h2{
-    margin-bottom: 23px;
+.skill-list div h1{
+    margin-bottom: 30px;
 }
 .skill-list div:hover{
     background-color: #353535;
@@ -133,3 +133,25 @@ nav ul li a:hover::after{
 #techStack{
     padding-top: 50px 0;
 }
+.stack-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.stack-list div{
+    background-color: #151515;
+    padding: 55px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.stack-list h1{
+    margin-top: 40px;
+    text-align: center;
+}
+.stack-list div:hover{
+    transform: translateY(-10px);
+}
+/* --------------tools---------------- */
