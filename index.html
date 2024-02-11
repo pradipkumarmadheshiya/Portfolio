@@ -27,6 +27,7 @@
             <a href="images/Pradip Kumar Madheshiya-cap02_013.pdf" download class="btn">Resume</a>
         </div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </div>
 <!-- ---------about section----------- -->
 <div id="about">
@@ -168,12 +169,13 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Enter Your Name" required>
                     <input type="text" name="Email" placeholder="Enter Your Email Address" required>
                     <textarea name="Message" rows="3" placeholder="Write Your Message..." ></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -181,5 +183,23 @@
         <p>Thanks for visiting my Portfolio. Made with <i class="fa-solid fa-heart"></i> by Pradip ©</p>
     </div>
 </div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOOO6CUbrTVX1yNVYTFfr-dRfZilBMSd88qNjXBDkXnlLd-5V9cdhUlXNRDX0y2hFxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html
