@@ -8,18 +8,20 @@
     <script src="https://kit.fontawesome.com/3847ae3c9c.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav>
+    <a class="navbar-brad" href="#header"><span>PORTFOLIO</span></a>
+    <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
 <div id="header">
     <div class="container">
-        <nav>
-            <a class="navbar-brad" href="#header"><span>PORTFOLIO</span></a>
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
         <div class="header-text">
             <h2>Hi &#128075 my name is</h2>
             <h1>Pradip Kumar Madheshiya</h1>
@@ -55,7 +57,7 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h1>Front-End</h1>
-                    <h4>HTML, CSS <br> JavaScript</h4>
+                    <h4>HTML, CSS</h4>
                 </div>
                 <div>
                     <i class="fa-solid fa-laptop-code"></i>
@@ -77,10 +79,6 @@
             <div>
                 <img src="images/css2.png">
                 <h1>CSS</h1>
-            </div>
-            <div>
-                <img src="images/javascript.png">
-                <h1>JavaScript</h1>
             </div>
             <div>
                 <img src="images/python.png">
@@ -136,18 +134,21 @@
                 <img src="images/typing test image.jpg">
                 <h4>Typing-Test Master</h4>
                 <p>We can test our typing speed here. "Typing Mastery" stands as a user-friendly typing crafted with the power of Python. This tool provides an platform to refine typing skills, making the learning experience enjoyable and effective.</p>
+                <p><span>Tech Stack:</span> Python, time</p>
                 <a href="https://github.com/pradipkumarmadheshiya/Terminal_based_dsa_projects/blob/main/terminal_based_typing_master.py"><i class="fab fa-github"></i> Github</a>
             </div>
             <div>
                 <img src="images/rps game.JPG">
                 <h4>Rock Paper Scissors Game</h4>
                 <p>Rock, paper, scissors is a fun game! We made our own version using Python. It's easy to play and a great way to have fun while practicing making quick decisions. Challenge the computer and see who's the ultimate champion!</p>
+                <p><span>Tech Stack:</span> Python</p>
                 <a href="https://github.com/pradipkumarmadheshiya/Terminal_based_dsa_projects/blob/main/rock_paper_scissor_game.py"><i class="fab fa-github"></i> Github</a>
             </div>
             <div>
                 <img src="images/social media app images.jpg">
                 <h4>Social Media Content Downloader</h4>
                 <p>It has been developed a handy social media content downloader using Pytube for YouTube videos and Instaloader for Instagram content. With this tool, you can easily download high-definition videos.</p>
+                <p><span>Tech Stack:</span> Python, pytube, instaloader</p>
                 <a href="https://github.com/pradipkumarmadheshiya/Python_projects/blob/main/content_downloader.py"><i class="fab fa-github"></i> Github</a>
             </div>
         </div>
@@ -165,8 +166,8 @@
                     <a href="https://www.linkedin.com/in/pradip-kumar-madheshiya-pradip/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/pradipkumarmadheshiya"><i class="fab fa-github"></i></a>
                     <a href="https://leetcode.com/pradip_kumar_madheshiya/"><i class="fa-solid fa-laptop-code"></i></a>
-                    <a href="#header"><i class="fas fa-home"></i></a>
                 </div>
+                <a href="images/Pradip Kumar Madheshiya-cap02_013.pdf" download class="btn">Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -200,6 +201,15 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    var sidemenu=document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
   </script>
 </body>
 </html
