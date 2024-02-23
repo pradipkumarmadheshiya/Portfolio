@@ -37,12 +37,12 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1vw 1.5vw;
 }
 nav a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     position: relative;
 }
 nav a span{
@@ -92,6 +92,9 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 /* --------------about section-------------- */
+#about .sub-title{
+    text-align: left;
+}
 #about .about-col-1{
     margin-left: 8vw;
     margin-top: 8vw;
@@ -106,14 +109,14 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 .about-col-2{
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 .sub-title{
     margin-top: 5vw;
@@ -131,13 +134,13 @@ nav ul li a:hover::after{
     line-height: 2vw;
 }
 /* ------------Technical Skills------------ */
-#skills .sub-title{
+.sub-title{
     text-align: center;
 }
 .skill-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 5vw;
+    grid-gap: 3vw;
     margin-top: 3vw;
     margin-left: 15vw;
     margin-right: 15vw;
@@ -146,175 +149,133 @@ nav ul li a:hover::after{
 }
 .skill-list div{
     background-color: #151515;
-    padding: 3vw;
-    border-radius: 10px;
+    padding: 3vw 1vw;
+    border-radius: 1vw;
+    transition: transform 0.5s;
 }
 .skill-list div i{
     font-size: 3vw;
     margin-bottom: 2vw;
 }
-.skill-list div h1{
+.skill-list div h2{
     margin-bottom: 2vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    margin-top: 2vw;
 }
 .skill-list div h4{
     font-size: 1.5vw;
 }
 .skill-list div:hover{
-    background-color: #353535;
-}
-/* ------------techStack-------------- */
-#techStack .sub-title{
-    text-align: center;
-}
-.stack-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 4vw;
-    margin-top: 3vw;
-    margin-left: 8vw;
-    margin-right: 8vw;
-}
-.stack-list div{
-    background-color: #151515;
-    padding: 3vw;
-    border-radius: 10px;
-    transition: transform 0.5s;
-}
-.stack-list img{
-    margin-left: 50px;
-}
-.stack-list h1{
-    margin-top: 2vw;
-    text-align: center;
-}
-.stack-list div:hover{
-    transform: translateY(-10px);
+    transform: translateY(-1vw);
 }
 /* --------------tools---------------- */
-#tools .sub-title{
-    text-align: center;
-}
 .tools-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 100px;
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
+    grid-gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+.tools-list h1{
+    font-size: 2vw;
+    margin-top: 2vw;
 }
 .tools-list div{
     background-color: #151515;
-    padding: 70px;
-    border-radius: 10px;
-    transition: transform 0.5s;
+    padding: 3vw;
+    border-radius: 1vw;
 }
-.tools-list h1{
-    margin-top: 40px;
+.tools-list{
+    margin-top: 2vw;
     text-align: center;
-}
-.tools-list div:hover{
-    transform: translateY(-10px);
-}
-/* --------------Statistics--------------- */
-#Statistics .sub-title{
-    text-align: center;
-}
-.Statistics-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 100px;
-    margin-top: 50px;
-    margin-left: 300px;
-    margin-right: 300px;
-    line-height: 30px;
-    text-align: center;
-}
-.Statistics-list div{
-    background-color: #151515;
-    padding: 50px;
-    border-radius: 10px;
-}
-.Statistics-list div:hover{
-    background-color: #353535;
 }
 /* --------------projects------------------ */
-#projects .sub-title{
-    text-align: center;
-}
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 50px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    grid-gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 .projects-list div{
     position:relative;
     overflow: hidden;
-    line-height: 25px;
+    line-height: 1.5vw;
 }
 .projects-list h4{
-    margin-top: 10px;
+    margin-top: 0.5vw;
+    font-size: 1.4vw;
 }
 .projects-list .bullet{
-    margin-top: 5px;
+    margin-top: 0.5vw;
+    font-size: 1.25vw;
 }
 .projects-list img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1vw;
     display: block;
 }
 .projects-list p span{
     color: #ff4882;
+    font-size: 1.25vw;
+}
+.projects-list p{
+    font-size: 1.25vw;
 }
 .projects-list .fab{
-    margin-top: 10px;
+    margin-top: 0.5vw;
 }
 .projects-list div{
     background-color: #151515;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.5vw;
+    border-radius: 1vw;
     transition: transform 0.5s;
 }
 .projects-list div:hover{
-    background-color: #353535;
-    transform: translateY(-10px);
+    transform: translateY(-0.6vw);
 }
 .projects-list a{
     text-decoration: none;
     color: #ff2268;
+    font-size: 1.25vw;
 }
 .projects-list a:hover{
     color: #ff004f;
-    font-size: large;
+    font-size: 1.3vw;
 }
 /* -------------contact----------------- */
+#contact .sub-title{
+    text-align: left;
+}
 .contact-left{
     flex-basis: 30%;
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 4vw;
+    margin-top: 0.5vw;
 }
 .contact-right{
-    flex-basis: 50%;
-    margin-top: 100px;
-    margin-right: 100px;
+    flex-basis: 60%;
+    margin-top: 5vw;
+    margin-right: 4vw;
 }
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 1.5vw;
 }
 .contact-left p i{
-
-    margin-right: 10px;
+    font-size: 1.5vw;
+    margin-right: 1vw;
+}
+.contact-left p{
+    font-size: 1.5vw;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 2.5vw;
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
+    font-size: 2.2vw;
+    margin-right: 1vw;
     display: inline-block;
     color: #fff
 }
@@ -329,32 +290,36 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    padding: 15px;
-    margin: 5px 0;
+    padding: 1vw;
+    margin: 0.3vw 0;
     background: #151515;
     color: #fff;
-    font-size: 15px;
-    border-radius: 7px;
+    font-size: 1vw;
+    border-radius: 0.6vw;
 }
 form .btn{
-    margin-top: 15px;
+    margin-top: 0.6vw;
     cursor: pointer;
 }
 #msg{
     color: #61b752;
-    margin-top: 10px;
+    margin-top: 1vw;
     display: block;
+    font-size: 1.5vw;
 }
 .copyright{
     text-align: center;
-    padding: 50px 0;
+    padding: 3vw 0;
+}
+.copyright p{
+    font-size: 1.5vw;
 }
 /* ---------------responsive screen---------------- */
 nav .fa-solid{
     display: none;
     right: 1vw;
 }
-@media (max-width:600px){
+@media (max-width:700px){
     nav .fa-solid{
         display: block;
         font-size: 4vw;
@@ -391,6 +356,6 @@ nav .fa-solid{
         font-size: 3vw;
     }
     nav{
-        height: 50px;
+        height: 40px;
     }
 }
