@@ -73,7 +73,7 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
-    margin-top: 30px;
+    margin-top: 3vw;
     width: fit-content;
     border: 2px solid #ff004f;
     padding: 0.6vw 2vw;
@@ -142,10 +142,13 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 3vw;
     margin-top: 3vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     line-height: 2vw;
     text-align: center;
+}
+.skill-list img{
+    border-radius: 0.6vw;
 }
 .skill-list div{
     background-color: #151515;
@@ -153,17 +156,10 @@ nav ul li a:hover::after{
     border-radius: 1vw;
     transition: transform 0.5s;
 }
-.skill-list div i{
-    font-size: 3vw;
-    margin-bottom: 2vw;
-}
 .skill-list div h2{
     margin-bottom: 2vw;
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-top: 2vw;
-}
-.skill-list div h4{
-    font-size: 1.5vw;
 }
 .skill-list div:hover{
     transform: translateY(-1vw);
@@ -174,21 +170,25 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 3vw;
     margin-top: 3vw;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
-.tools-list h1{
-    font-size: 2vw;
+.tools-list h2{
+    font-size: 1.8vw;
     margin-top: 2vw;
 }
 .tools-list div{
     background-color: #151515;
-    padding: 3vw;
+    padding: 2vw;
     border-radius: 1vw;
+    transition: 0.5s;
 }
 .tools-list{
     margin-top: 2vw;
     text-align: center;
+}
+.tools-list div:hover{
+    transform: translateY(-1vw);
 }
 /* --------------projects------------------ */
 .projects-list{
@@ -196,21 +196,22 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 3vw;
     margin-top: 3vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 .projects-list div{
     position:relative;
     overflow: hidden;
-    line-height: 1.5vw;
 }
 .projects-list h4{
     margin-top: 0.5vw;
     font-size: 1.4vw;
 }
 .projects-list .bullet{
-    margin-top: 0.5vw;
     font-size: 1.25vw;
+}
+.projects-list .bullet li{
+    margin-top: 1vw;
 }
 .projects-list img{
     width: 100%;
@@ -225,16 +226,12 @@ nav ul li a:hover::after{
     font-size: 1.25vw;
 }
 .projects-list .fab{
-    margin-top: 0.5vw;
+    margin-top: 1vw;
 }
 .projects-list div{
     background-color: #151515;
     padding: 1.5vw;
     border-radius: 1vw;
-    transition: transform 0.5s;
-}
-.projects-list div:hover{
-    transform: translateY(-0.6vw);
 }
 .projects-list a{
     text-decoration: none;
@@ -312,14 +309,97 @@ form .btn{
     padding: 3vw 0;
 }
 .copyright p{
-    font-size: 1.5vw;
+    font-size: 15px;
 }
-/* ---------------responsive screen---------------- */
 nav .fa-solid{
     display: none;
     right: 1vw;
 }
-@media (max-width:700px){
+/* ---------------responsive screen---------------- */
+@media (max-width:1000px){
+    nav a{
+        font-size: 1.7vw;
+    }
+    .header-text h1{
+        font-size: 4vw;
+    }
+    .header-text h2{
+        font-size: 3vw;
+    }
+    .btn{
+        font-size: 1.8vw;
+    }
+    .sub-title{
+        font-size: 3.5vw;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+        margin-left: 8vw;
+    }
+    #about .sub-title{
+        margin-top: -8vw;
+    }
+    .about-col-2 #para{
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+    .skill-list img{
+        width: 35%;
+        height: 60%;
+        border-radius: 0.5vw;
+    }
+    .skill-list div h2{
+        font-size: 2.2vw;
+        margin-top: 4vw;
+    }
+    .tools-list img{
+        width: 20%;
+        height: 60%;
+    }
+    .tools-list h2{
+        font-size: 2.3vw;
+    }
+    .projects-list h4{
+        margin-top: 1.5vw;
+        font-size: 1.8vw;
+    }
+    .projects-list .bullet{
+        font-size: 1.8vw;
+    }
+    .projects-list p span{
+        font-size: 1.8vw;
+    }
+    .projects-list p{
+        font-size: 1.8vw;
+    }
+    .projects-list a{
+        font-size: 1.8vw;
+    }
+    .projects-list a:hover{
+        font-size: 1.9vw;
+    }
+    .contact-left{
+        flex-basis: 70%;
+    }
+    .contact-right{
+        flex-basis: 70%;
+        margin-left: 4vw;
+    }
+    .contact-left p i{
+        font-size: 1.8vw;
+    }
+    .contact-left p{
+        font-size: 1.8vw;
+    }
+    .social-icons a{
+        font-size: 3vw;
+    }
+    form input, form textarea{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width:600px){
     nav .fa-solid{
         display: block;
         font-size: 4vw;
@@ -328,8 +408,8 @@ nav .fa-solid{
         background: #ff2268;
         position: fixed;
         top: 0;
-        right: -40vw;
-        width: 30vw;
+        right: -30vw;
+        width: 25vw;
         height: 100vh;
         padding-top: 8vh;
         z-index: 2;
@@ -357,5 +437,83 @@ nav .fa-solid{
     }
     nav{
         height: 40px;
+    }
+    .header-text h1{
+        font-size: 4.5vw;
+    }
+    .header-text h2{
+        font-size: 3.3vw;
+    }
+    .btn{
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    .sub-title{
+        font-size: 4vw;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+        margin-left: 8vw;
+    }
+    #about .sub-title{
+        margin-top: -8vw;
+    }
+    .about-col-2 #para{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .skill-list img{
+        width: 20%;
+        height: 60%;
+        border-radius: 1vw;
+    }
+    .skill-list div h2{
+        font-size: 3vw;
+        margin-top: 3vw;
+    }
+    .tools-list img{
+        width: 20%;
+        height: 60%;
+    }
+    .tools-list h2{
+        font-size: 3vw;
+    }
+    .projects-list h4{
+        margin-top: 1.5vw;
+        font-size: 3vw;
+    }
+    .projects-list .bullet{
+        font-size: 3vw;
+    }
+    .projects-list p span{
+        font-size: 3vw;
+    }
+    .projects-list p{
+        font-size: 3vw;
+    }
+    .projects-list a{
+        font-size: 3vw;
+    }
+    .projects-list a:hover{
+        font-size: 3.2vw;
+    }
+    .contact-left{
+        flex-basis: 70%;
+    }
+    .contact-right{
+        flex-basis: 70%;
+        margin-left: 4vw;
+    }
+    .contact-left p i{
+        font-size: 3vw;
+    }
+    .contact-left p{
+        font-size: 3vw;
+    }
+    .social-icons a{
+        font-size: 4vw;
+    }
+    form input, form textarea{
+        font-size: 2.5vw;
     }
 }
