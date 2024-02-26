@@ -76,13 +76,18 @@ nav ul li a:hover::after{
     margin-top: 3vw;
     width: fit-content;
     border: 2px solid #ff004f;
-    padding: 0.6vw 2vw;
+    padding: 0.5vw 1.5vw;
     border-radius: 0.5vw;
     text-decoration: none;
     color: #fff;
     font-size: 1.3vw;
     background: #ff004f;
     transition: 0.5s;
+}
+.header-text .view{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
 }
 .btn:hover{
     background: #242424;
