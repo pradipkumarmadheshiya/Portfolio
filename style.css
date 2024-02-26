@@ -179,6 +179,7 @@ nav ul li a:hover::after{
     margin-top: 3vw;
     margin-left: 3vw;
     margin-right: 3vw;
+    text-align: center;
 }
 .tools-list h2{
     font-size: 1.8vw;
@@ -190,11 +191,33 @@ nav ul li a:hover::after{
     border-radius: 1vw;
     transition: 0.5s;
 }
-.tools-list{
-    margin-top: 2vw;
+.tools-list div:hover{
+    transform: translateY(-1vw);
+}
+/* ----------------statistics---------------- */
+.statistics-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     text-align: center;
 }
-.tools-list div:hover{
+.statistics-list h4{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+}
+.statistics-list img{
+    border-radius: 1vw;
+}
+.statistics-list div{
+    background-color: #151515;
+    padding: 2vw;
+    border-radius: 1vw;
+    transition: 0.5s;
+}
+.statistics-list div:hover{
     transform: translateY(-1vw);
 }
 /* --------------projects------------------ */
@@ -205,10 +228,6 @@ nav ul li a:hover::after{
     margin-top: 3vw;
     margin-left: 3vw;
     margin-right: 3vw;
-}
-.projects-list div{
-    position:relative;
-    overflow: hidden;
 }
 .projects-list h4{
     margin-top: 0.5vw;
@@ -366,6 +385,13 @@ nav .fa-solid{
     .tools-list h2{
         font-size: 2.3vw;
     }
+    .statistics-list img{
+        width: 20%;
+        height: 50%;
+    }
+    .statistics-list h4{
+        font-size: 2vw;
+    }
     .projects-list h4{
         margin-top: 1.5vw;
         font-size: 1.8vw;
@@ -484,6 +510,13 @@ nav .fa-solid{
     }
     .tools-list h2{
         font-size: 3vw;
+    }
+    .statistics-list img{
+        width: 20%;
+        height: 50%;
+    }
+    .statistics-list h4{
+        font-size: 2.8vw;
     }
     .projects-list h4{
         margin-top: 1.5vw;
