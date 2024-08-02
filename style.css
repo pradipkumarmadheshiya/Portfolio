@@ -229,25 +229,29 @@ nav ul li a:hover::after{
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 3vw;
+    grid-gap: 2vw;
     margin-top: 3vw;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 .projects-list h4{
-    margin-top: 0.5vw;
+    margin-top: 1vw;
     font-size: 1.4vw;
 }
 .projects-list .bullet{
     font-size: 1.25vw;
 }
 .projects-list .bullet li{
-    margin-top: 1vw;
+    margin-top: 0.5vw;
 }
 .projects-list img{
     width: 100%;
     border-radius: 1vw;
     display: block;
+}
+#projects .live{
+    position: relative;
+    right: -10vw;
 }
 .projects-list p span{
     color: #ff4882;
@@ -272,6 +276,9 @@ nav ul li a:hover::after{
 .projects-list a:hover{
     color: #ff004f;
     font-size: 1.3vw;
+}
+#projects .projects-list>div{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
 /* -------------contact----------------- */
 #contact .sub-title{
